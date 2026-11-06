@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "College Station, Texas · aramirez6880@tamu.edu · Download PDF"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\nTexas A&M University, College Station, Texas\n\nM.S. in Economics, expected May 2027\nB.S. in Agricultural Economics, cum laude, December 2025. Minor in Economics; concentration in Policy and Economic Analysis.\n\nSelected completed coursework: Foundations of Microeconomic Theory, Foundations of Macroeconomic Theory, Regression Analysis, Economic Analytics, Linear Algebra, Experimental Economics.\nFall 2026 (in progress): Mathematical Economics, Engineering Mathematics III (multivariable calculus), Foundations of Mathematics, Economics Capstone.\nPlanned Spring 2027: Analysis on the Real Line, Distribution Theory, Economic Forecasting.\nResearch interests: Behavioral and experimental economics, industrial organization, market design."
+  },
+  {
+    "objectID": "cv.html#independent-research",
+    "href": "cv.html#independent-research",
+    "title": "Curriculum Vitae",
+    "section": "Independent research",
+    "text": "Independent research\nDoes the Crowd Add to the Forecast? Probability Forecasts in Kalshi Weather Markets In progress 2026–present\nM.S. capstone and writing sample · working paper (PDF)\n\nDesigned the research questions, forecast comparisons, test specifications and scoring rules for a study of Kalshi daily-high-temperature contracts against public NOAA forecasts.\nConstructed a matched dataset of market quotes, public forecast vintages and settlement outcomes for 1,435 event-days across four cities.\nOn 139 chronologically held-out New York event-days, Kalshi’s mean multicategory Brier score was 14.5% below the National Blend of Models’ (time-block bootstrap, HAC inference).\nBuilt a calibrated six-source public benchmark; Kalshi outperforms it in New York and Los Angeles, with inconclusive differences in Miami and Phoenix.\n\nReplication of Luco and Marshall (2020), “The Competitive Impact of Vertical Integration by Multiproduct Firms” In progress 2026–present\n\nReproduced selected reduced-form specifications in R using fixest, including Tables 4A, 4B and 6, with product-store, product-week and store-week fixed effects and county-clustered inference.\nExamined treatment definitions, comparison-group restrictions, pretrend diagnostics and indirect treatment through rival-price responses; maintained a published-versus-reproduced comparison record.\n\nMore detail, including what isn’t finished, is on Research & Projects."
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Curriculum Vitae",
+    "section": "Professional experience",
+    "text": "Professional experience\nQuality Fasteners, Sales Representative and Analyst, May 2023 – May 2026\n\nServed construction and agriculture supply accounts, from individual mechanics to lead purchasers.\nChecked sales and product records in Python, built Excel and Power BI reports, and communicated pricing and product recommendations to management and customers.\n\nNWF Strategies, Political Consulting Intern, July 2024 – January 2025\n\nSupported political campaign outreach through robocalling."
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "Curriculum Vitae",
+    "section": "Skills",
+    "text": "Skills\nProgramming: R (fixest, ggplot2), Python (pandas, statsmodels), SAS (coursework), Stata (reading)\nTools: Excel, Power BI, LaTeX\nMethods: Panel data, fixed effects, difference-in-differences, probabilistic forecast evaluation, block bootstrap, HAC inference, data validation\nCertifications: FINRA Securities Industry Essentials (SIE)\nLanguages: English (native), Spanish (intermediate)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Amadeo Ramirez",
+    "section": "",
+    "text": "I’m an M.S. student in economics at Texas A&M University, graduating in May 2027. My research interests are behavioral and experimental economics, industrial organization and market design.\nMy current work asks whether prices in Kalshi’s daily-temperature markets add to public weather forecasts, and replicates Luco and Marshall’s study of vertical integration in the U.S. soft-drink industry. More on the Research & Projects page.\nI’m looking for predoctoral research positions starting in summer 2027."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research & Projects",
+    "section": "",
+    "text": "Each project is labeled by where it actually stands. In progress means work is underway; within each one, the parts that are finished and checked are listed separately from the parts that aren’t. Proposal means a question I’m developing, with no design, data or results yet."
+  },
+  {
+    "objectID": "research.html#in-progress",
+    "href": "research.html#in-progress",
+    "title": "Research & Projects",
+    "section": "In progress",
+    "text": "In progress\n\nDoes the Crowd Add to the Forecast? Probability forecasts in Kalshi weather markets\nIn progress M.S. capstone and writing sample, 2026–present\nWorking paper, version 7, November 2026 (PDF)\nKalshi runs daily markets on the high temperature in several U.S. cities. Each contract pays out if the official high lands in a given temperature bin, so the prices amount to a probability forecast. The National Weather Service publishes its own probability forecasts for the same days. I wanted to know whether the market adds anything that public forecasts don’t already contain.\nAnswering that meant building a matched record of market quotes, public forecast releases and official outcomes, with each forecast stamped by when it was actually available. Lining up forecast timing, the weather station each contract settles on, and each contract’s exact temperature bins took more of the work than the comparisons did.\nCompleted so far\n\nNew York, Kalshi vs. the National Blend of Models (NBM). On 139 event-days held out in time order, Kalshi’s mean multicategory Brier score was 14.5% lower than NBM’s, with time-block bootstrap and HAC inference.\nA combined public benchmark. A forecast built from six public sources (NBM, GEFS, ECMWF ensemble, NDFD, HRRR and the point forecast matrix), each calibrated to the contract bins using only past outcomes. In New York and Los Angeles, Kalshi beats this combined forecast, and adding Kalshi to it improves accuracy. In Miami and Phoenix the differences aren’t statistically distinguishable from zero.\nRobustness work on station location, forecast revisions after the market’s cutoff, and other cities, reported as exploratory rather than held-out evidence.\n\nNot yet done. How markets respond to forecast bulletins, why the market’s advantage varies across cities (liquidity, local information), and whether any of this is profitable after fees. None of these have been estimated, and the results above are about forecast accuracy, not about where traders’ information comes from.\n\n\nReplication: Luco and Marshall (2020), “The Competitive Impact of Vertical Integration by Multiproduct Firms”\nIn progress Independent replication, 2026–present\nLuco and Marshall study what happened to soft-drink prices when Coca-Cola and PepsiCo bought their bottlers, which also bottled rival brands such as Dr Pepper. I’m translating their Stata specifications into R (fixest) as a way of learning how a published empirical IO paper is built, one table at a time.\nReproduced so far (status as of September 2026): Table 1, the price panel of Table 2, the baseline firm regressions in Table 4A (roughly 16 million observations each, product-store and product-week fixed effects, county-clustered errors), the restricted-sample Table 4B, and the within-store-week estimates in Table 6. For example, my Dr Pepper estimate in Table 4A is 0.0153 (0.0029), against a published 0.015 (0.003).\nStill open. The share panel of Table 2 needs confirming, and Tables 3 and 5 aren’t independently reproduced yet. The hardest part has been the comparison design rather than the code: how treatment is defined, and how rival-price responses can quietly contaminate the comparison group. The retail scanner data behind the paper are restricted, so no data are shared here.\n\n\nA personal time-and-spending measurement system\nIn progress Personal project, 2026–present\nI built a system that records how I spend my time and money each day: a desktop logging app and survey forms, receipt and bank-statement parsing, and a daily panel with deduplication and coverage checks. The idea came from Becker’s model of time allocation: every choice costs both money and hours.\nWhat I’d ultimately like to do is model household time allocation in aggregate. That only works if the measurement works, so I’m using myself as the test subject to find the way of recording time and spending that holds up best before asking it of anyone else.\nThe most useful result so far is about measurement, not behavior. After the first collection wave (126 days), compliance had declined and only about 45% of time was accounted for, and fully reported days looked different from partial ones. That’s a selection problem, so averages from that wave can’t be taken at face value. A second wave is being designed around it. No personal data are published."
+  },
+  {
+    "objectID": "research.html#proposals",
+    "href": "research.html#proposals",
+    "title": "Research & Projects",
+    "section": "Proposals",
+    "text": "Proposals\n\nRewards, disclosure and experimentation when testing is scarce\nProposal Question development, 2026\nSponsors of innovation, such as advance market commitments and first-success prizes, choose both how to reward firms and whether to make trial results public. Sharing results could save competitors from repeating failed tests, but it could also make firms wait for someone else to go first. Failed trials can also be noisy or specific to their setting, so repeating a test isn’t automatically wasteful. I’m interested in how these rules shape competing firms’ experimentation, possibly in agricultural innovation, where a missed growing season delays testing.\nStatus: This is a research question I’m developing. A laboratory experiment is one possibility under consideration. There is no settled design, data or results, and no supervision or funding is in place."
+  }
+]

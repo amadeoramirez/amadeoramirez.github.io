@@ -1,0 +1,28 @@
+---
+title: "Amadeo Ramirez"
+subtitle: "M.S. Economics, Texas A&M University"
+image: files/headshot.jpg
+image-alt: "Photo of Amadeo Ramirez"
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: file-earmark-pdf
+      text: CV
+      href: files/Ramirez_Amadeo_CV.pdf
+    - icon: envelope
+      text: aramirez6880@tamu.edu
+      href: mailto:aramirez6880@tamu.edu
+---
+
+I'm an M.S. student in economics at Texas A&M University, graduating in May 2027.
+My research interests are behavioral and experimental economics, industrial
+organization and market design.
+
+My current work asks whether prices in Kalshi's daily-temperature markets add to
+public weather forecasts, and replicates Luco and Marshall's study of vertical
+integration in the U.S. soft-drink industry. More on the
+[Research & Projects](research.qmd) page.
+
+I'm looking for predoctoral research positions starting in summer 2027.

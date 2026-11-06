@@ -1,0 +1,80 @@
+---
+title: "Curriculum Vitae"
+---
+
+College Station, Texas · [aramirez6880@tamu.edu](mailto:aramirez6880@tamu.edu) ·
+[Download PDF](files/Ramirez_Amadeo_CV.pdf)
+
+## Education
+
+**Texas A&M University**, College Station, Texas
+
+- M.S. in Economics, expected May 2027
+- B.S. in Agricultural Economics, *cum laude*, December 2025. Minor in Economics;
+  concentration in Policy and Economic Analysis.
+
+*Selected completed coursework:* Foundations of Microeconomic Theory, Foundations of
+Macroeconomic Theory, Regression Analysis, Economic Analytics, Linear Algebra,
+Experimental Economics.
+
+*Fall 2026 (in progress):* Mathematical Economics, Engineering Mathematics III
+(multivariable calculus), Foundations of Mathematics, Economics Capstone.
+
+*Planned Spring 2027:* Analysis on the Real Line, Distribution Theory, Economic
+Forecasting.
+
+**Research interests:** Behavioral and experimental economics, industrial
+organization, market design.
+
+## Independent research
+
+**Does the Crowd Add to the Forecast? Probability Forecasts in Kalshi Weather Markets**
+[In progress]{.status .status-progress} 2026–present\
+*M.S. capstone and writing sample* ·
+[working paper (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_v7.pdf)
+
+- Designed the research questions, forecast comparisons, test specifications and
+  scoring rules for a study of Kalshi daily-high-temperature contracts against public
+  NOAA forecasts.
+- Constructed a matched dataset of market quotes, public forecast vintages and
+  settlement outcomes for 1,435 event-days across four cities.
+- On 139 chronologically held-out New York event-days, Kalshi's mean multicategory
+  Brier score was 14.5% below the National Blend of Models' (time-block bootstrap,
+  HAC inference).
+- Built a calibrated six-source public benchmark; Kalshi outperforms it in New York
+  and Los Angeles, with inconclusive differences in Miami and Phoenix.
+
+**Replication of Luco and Marshall (2020), "The Competitive Impact of Vertical
+Integration by Multiproduct Firms"** [In progress]{.status .status-progress} 2026–present
+
+- Reproduced selected reduced-form specifications in R using `fixest`, including
+  Tables 4A, 4B and 6, with product-store, product-week and store-week fixed effects
+  and county-clustered inference.
+- Examined treatment definitions, comparison-group restrictions, pretrend diagnostics
+  and indirect treatment through rival-price responses; maintained a
+  published-versus-reproduced comparison record.
+
+More detail, including what isn't finished, is on [Research & Projects](research.qmd).
+
+## Professional experience
+
+**Quality Fasteners**, Sales Representative and Analyst, May 2023 – May 2026
+
+- Served construction and agriculture supply accounts, from individual mechanics to
+  lead purchasers.
+- Checked sales and product records in Python, built Excel and Power BI reports, and
+  communicated pricing and product recommendations to management and customers.
+
+**NWF Strategies**, Political Consulting Intern, July 2024 – January 2025
+
+- Supported political campaign outreach through robocalling.
+
+## Skills
+
+**Programming:** R (`fixest`, `ggplot2`), Python (`pandas`, `statsmodels`), SAS
+(coursework), Stata (reading)\
+**Tools:** Excel, Power BI, LaTeX\
+**Methods:** Panel data, fixed effects, difference-in-differences, probabilistic
+forecast evaluation, block bootstrap, HAC inference, data validation\
+**Certifications:** FINRA Securities Industry Essentials (SIE)\
+**Languages:** English (native), Spanish (intermediate)

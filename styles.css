@@ -1,0 +1,28 @@
+/* Status badges: completed / in progress / proposal */
+.status {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.4rem;
+  border-radius: 0.25rem;
+  border: 1px solid currentColor;
+  vertical-align: 0.1em;
+}
+.status-done     { color: #1a7f37; }
+.status-progress { color: #9a6700; }
+.status-proposal { color: #6639ba; }
+
+@media (prefers-color-scheme: dark) {
+  .status-done     { color: #56d364; }
+  .status-progress { color: #e3b341; }
+  .status-proposal { color: #bc8cff; }
+}
+body.quarto-dark .status-done     { color: #56d364; }
+body.quarto-dark .status-progress { color: #e3b341; }
+body.quarto-dark .status-proposal { color: #bc8cff; }
+
+main h3.project, main h3 { margin-top: 2.2rem; }
+main { max-width: 46rem; }

@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs          # GitHub Pages: serve from main branch, /docs folder
+  render:                   # only these pages are built; README/notes stay out of the site
+    - index.qmd
+    - research.qmd
+    - cv.qmd
+  resources:
+    - .nojekyll
+    - files/
+
+website:
+  title: "Amadeo Ramirez"
+  site-url: "https://amadeoramirez.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research & Projects
+      - href: cv.qmd
+        text: CV
+  page-footer:
+    center: "Last updated November 2026"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true

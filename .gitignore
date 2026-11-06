@@ -1,0 +1,8 @@
+/.quarto/
+/_site/
+*_files/libs/
+REVIEW.md
+_private/
+
+**/*.quarto_ipynb
+cv_source/

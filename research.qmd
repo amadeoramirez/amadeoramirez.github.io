@@ -1,0 +1,105 @@
+---
+title: "Research & Projects"
+---
+
+Each project is labeled by where it actually stands. **In progress** means work is
+underway; within each one, the parts that are finished and checked are listed
+separately from the parts that aren't. **Proposal** means a question I'm developing,
+with no design, data or results yet.
+
+## In progress
+
+### Does the Crowd Add to the Forecast? Probability forecasts in Kalshi weather markets {.project}
+
+[In progress]{.status .status-progress} M.S. capstone and writing sample, 2026–present\
+[Working paper, version 7, November 2026 (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_v7.pdf)
+
+Kalshi runs daily markets on the high temperature in several U.S. cities. Each
+contract pays out if the official high lands in a given temperature bin, so the prices
+amount to a probability forecast. The National Weather Service publishes its own
+probability forecasts for the same days. I wanted to know whether the market adds
+anything that public forecasts don't already contain.
+
+Answering that meant building a matched record of market quotes, public forecast
+releases and official outcomes, with each forecast stamped by when it was actually
+available. Lining up forecast timing, the weather station each contract settles on,
+and each contract's exact temperature bins took more of the work than the comparisons
+did.
+
+**Completed so far**
+
+- *New York, Kalshi vs. the National Blend of Models (NBM).* On 139 event-days held
+  out in time order, Kalshi's mean multicategory Brier score was 14.5% lower than
+  NBM's, with time-block bootstrap and HAC inference.
+- *A combined public benchmark.* A forecast built from six public sources (NBM, GEFS,
+  ECMWF ensemble, NDFD, HRRR and the point forecast matrix), each calibrated to the
+  contract bins using only past outcomes. In New York and Los Angeles, Kalshi beats
+  this combined forecast, and adding Kalshi to it improves accuracy. In Miami and
+  Phoenix the differences aren't statistically distinguishable from zero.
+- *Robustness work* on station location, forecast revisions after the market's
+  cutoff, and other cities, reported as exploratory rather than held-out evidence.
+
+**Not yet done.** How markets respond to forecast bulletins, why the market's
+advantage varies across cities (liquidity, local information), and whether any of
+this is profitable after fees. None of these have been estimated, and the results
+above are about forecast accuracy, not about where traders' information comes from.
+
+### Replication: Luco and Marshall (2020), "The Competitive Impact of Vertical Integration by Multiproduct Firms" {.project}
+
+[In progress]{.status .status-progress} Independent replication, 2026–present
+
+Luco and Marshall study what happened to soft-drink prices when Coca-Cola and
+PepsiCo bought their bottlers, which also bottled rival brands such as Dr Pepper.
+I'm translating their Stata specifications into R (`fixest`) as a way of learning
+how a published empirical IO paper is built, one table at a time.
+
+**Reproduced so far** (status as of September 2026): Table 1, the price panel of
+Table 2, the baseline firm regressions in Table 4A (roughly 16 million observations
+each, product-store and product-week fixed effects, county-clustered errors), the
+restricted-sample Table 4B, and the within-store-week estimates in Table 6. For
+example, my Dr Pepper estimate in Table 4A is 0.0153 (0.0029), against a published
+0.015 (0.003).
+
+**Still open.** The share panel of Table 2 needs confirming, and Tables 3 and 5 aren't
+independently reproduced yet. The hardest part has been the comparison design rather
+than the code: how treatment is defined, and how rival-price responses can quietly
+contaminate the comparison group. The retail scanner data behind the paper are
+restricted, so no data are shared here.
+
+### A personal time-and-spending measurement system {.project}
+
+[In progress]{.status .status-progress} Personal project, 2026–present
+
+I built a system that records how I spend my time and money each day: a desktop
+logging app and survey forms, receipt and bank-statement parsing, and a daily panel
+with deduplication and coverage checks. The idea came from Becker's model of time
+allocation: every choice costs both money and hours.
+
+What I'd ultimately like to do is model household time allocation in aggregate. That
+only works if the measurement works, so I'm using myself as the test subject to find
+the way of recording time and spending that holds up best before asking it of anyone
+else.
+
+The most useful result so far is about measurement, not behavior. After the first
+collection wave (126 days), compliance had declined and only about 45% of time was
+accounted for, and fully reported days looked different from partial ones. That's a
+selection problem, so averages from that wave can't be taken at face value. A second
+wave is being designed around it. No personal data are published.
+
+## Proposals
+
+### Rewards, disclosure and experimentation when testing is scarce {.project}
+
+[Proposal]{.status .status-proposal} Question development, 2026
+
+Sponsors of innovation, such as advance market commitments and first-success prizes,
+choose both how to reward firms and whether to make trial results public. Sharing
+results could save competitors from repeating failed tests, but it could also make
+firms wait for someone else to go first. Failed trials can also be noisy or specific
+to their setting, so repeating a test isn't automatically wasteful. I'm interested
+in how these rules shape competing firms' experimentation, possibly in agricultural
+innovation, where a missed growing season delays testing.
+
+*Status:* This is a research question I'm developing. A laboratory experiment is one
+possibility under consideration. There is no settled design, data or results, and no
+supervision or funding is in place.
