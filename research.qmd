@@ -92,3 +92,29 @@ innovation, where a missed growing season delays testing.
 *Status:* This is a research question I'm developing. A laboratory experiment is one
 possibility under consideration. There is no settled design, data or results, and no
 supervision or funding is in place.
+
+## Research Notes
+
+### What counts as progress when our goals change? {.project}
+
+A common starting point in economics is to hold preferences fixed and ask how
+people choose. But pursuing a goal changes the person pursuing it. What someone
+is able to do shapes what they come to want, and what they want shapes which
+abilities they build. Amartya Sen made a related point about adaptive preferences:
+people in hard circumstances can scale their wants down to match and still report
+being satisfied.
+
+I'm thinking through what welfare means when preferences and capabilities move
+together. One way to set it up is as a coupled system that can settle into more
+than one stable pattern. In one, limited abilities lead to low aspirations and
+little investment, which in turn keeps abilities limited. If each pattern looks
+satisfactory from the inside, what standard lets us say one is better?
+
+This connects to my interest in innovation policy. A reward like an advance
+market commitment can redirect which problems firms work on. Could the
+capabilities they build in response change which problems they pursue after the
+reward ends?
+
+*Status:* Early conceptual work. I'm still deciding whether to start with the
+welfare question or with how to distinguish the two directions of influence.
+I'd welcome suggestions for readings or empirical settings that could help.
