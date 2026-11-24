@@ -2,47 +2,36 @@
 title: "Research & Projects"
 ---
 
-Each project is labeled by where it actually stands. **In progress** means work is
-underway; within each one, the parts that are finished and checked are listed
-separately from the parts that aren't. **Proposal** means a question I'm developing,
-with no design, data or results yet.
+## Working paper
+
+### Does the Crowd Add to the Forecast? Probability Forecasts in Kalshi Weather Markets {.project}
+
+[Working paper, November 23, 2026 (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_2026-11-23.pdf)
+
+I started with a question about Federal Reserve forward guidance: could a market
+price tell households or firms something useful alongside what the Fed had
+already said? I turned to weather because the outcome is observed daily and
+public forecasting agencies already publish detailed guidance. With that much
+information available, what can a market add?
+
+I compare six-bin probabilities from Kalshi’s daily-high contracts with NOAA’s
+National Blend of Models (NBM), then with a forecast that combines six public
+sources. Matching the forecast cutoff, the settlement station and the contract
+bins is central to the comparison.
+
+On 139 held-out New York events, Kalshi’s mean Brier loss was 14.5% below NBM’s.
+An adjustment learned from earlier station outcomes narrowed the original gap
+in Los Angeles and Miami. Against the six-source forecast, adding Kalshi improved
+the primary comparison in New York and Los Angeles. Miami and Phoenix were
+inconclusive, and Los Angeles showed the most consistent improvement across
+training windows.
+
+The paper also looks at trading conditions, local guidance and public forecast
+updates. Those analyses leave open how the market’s predictive advantage arises.
+The next question I want to pursue is when market prices adjust to a documented
+public update, and whether that adjustment improves a forecast someone could use.
 
 ## In progress
-
-### Does the Crowd Add to the Forecast? Probability forecasts in Kalshi weather markets {.project}
-
-[In progress]{.status .status-progress} M.S. capstone and writing sample, 2026–present\
-[Working paper, version 7, November 2026 (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_v7.pdf)
-
-Kalshi runs daily markets on the high temperature in several U.S. cities. Each
-contract pays out if the official high lands in a given temperature bin, so the prices
-amount to a probability forecast. The National Weather Service publishes its own
-probability forecasts for the same days. I wanted to know whether the market adds
-anything that public forecasts don't already contain.
-
-Answering that meant building a matched record of market quotes, public forecast
-releases and official outcomes, with each forecast stamped by when it was actually
-available. Lining up forecast timing, the weather station each contract settles on,
-and each contract's exact temperature bins took more of the work than the comparisons
-did.
-
-**Completed so far**
-
-- *New York, Kalshi vs. the National Blend of Models (NBM).* On 139 event-days held
-  out in time order, Kalshi's mean multicategory Brier score was 14.5% lower than
-  NBM's, with time-block bootstrap and HAC inference.
-- *A combined public benchmark.* A forecast built from six public sources (NBM, GEFS,
-  ECMWF ensemble, NDFD, HRRR and the point forecast matrix), each calibrated to the
-  contract bins using only past outcomes. In New York and Los Angeles, Kalshi beats
-  this combined forecast, and adding Kalshi to it improves accuracy. In Miami and
-  Phoenix the differences aren't statistically distinguishable from zero.
-- *Robustness work* on station location, forecast revisions after the market's
-  cutoff, and other cities, reported as exploratory rather than held-out evidence.
-
-**Not yet done.** How markets respond to forecast bulletins, why the market's
-advantage varies across cities (liquidity, local information), and whether any of
-this is profitable after fees. None of these have been estimated, and the results
-above are about forecast accuracy, not about where traders' information comes from.
 
 ### Replication: Luco and Marshall (2020), "The Competitive Impact of Vertical Integration by Multiproduct Firms" {.project}
 
