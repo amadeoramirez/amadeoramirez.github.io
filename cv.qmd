@@ -29,20 +29,17 @@ organization, market design.
 ## Independent research
 
 **Does the Crowd Add to the Forecast? Probability Forecasts in Kalshi Weather Markets**
-[In progress]{.status .status-progress} 2026–present\
-*M.S. capstone and writing sample* ·
-[working paper (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_v7.pdf)
+2026–present\
+*M.S. capstone and working paper* ·
+[November 2026 working paper (PDF)](files/Ramirez_Kalshi_Weather_Forecasts_2026-11-23.pdf)
 
-- Designed the research questions, forecast comparisons, test specifications and
-  scoring rules for a study of Kalshi daily-high-temperature contracts against public
-  NOAA forecasts.
-- Constructed a matched dataset of market quotes, public forecast vintages and
-  settlement outcomes for 1,435 event-days across four cities.
-- On 139 chronologically held-out New York event-days, Kalshi's mean multicategory
-  Brier score was 14.5% below the National Blend of Models' (time-block bootstrap,
-  HAC inference).
-- Built a calibrated six-source public benchmark; Kalshi outperforms it in New York
-  and Los Angeles, with inconclusive differences in Miami and Phoenix.
+- Built and validated a matched dataset of market quotes, public forecast vintages,
+  and settlement outcomes for 1,435 event-days across four cities.
+- On 139 chronologically held-out New York events, Kalshi's mean Brier loss was
+  14.5% lower than NOAA's National Blend of Models.
+- Built a six-source public benchmark and a market blend trained on earlier outcomes.
+  On the 1,184-event common sample, adding Kalshi improved the primary comparison
+  in New York and Los Angeles. Miami and Phoenix were inconclusive.
 
 **Replication of Luco and Marshall (2020), "The Competitive Impact of Vertical
 Integration by Multiproduct Firms"** [In progress]{.status .status-progress} 2026–present
